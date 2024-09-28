@@ -6,7 +6,7 @@ interface Portfolio {
     name: string
     published: boolean
     content?: {
-        skills?: string
+        skills?: []
         about?: string
         projects: any[] | null
     }
@@ -34,7 +34,7 @@ export const handler = async (event: HandlerEvent) => {
 
         const body: string = event.body
         let portfolio = JSON.parse(body) as Portfolio
-        portfolio = { ...portfolio, published: false, content: { skills: '', about: '', projects: null } }
+        portfolio = { ...portfolio, published: false, content: { skills: [], about: '', projects: null } }
 
         portfolios.insertOne(portfolio)
 
