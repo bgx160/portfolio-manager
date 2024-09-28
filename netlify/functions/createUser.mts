@@ -1,4 +1,4 @@
-import { connectToDatabase } from "../db/index.mts"
+/* import { connectToDatabase } from "../db/index.mts"
 import type { HandlerEvent, } from "@netlify/functions"
 import bcrypt from 'bcrypt'
 
@@ -34,3 +34,4 @@ export const handler = async (event: HandlerEvent) => {
         }
     }
 }
+ */
