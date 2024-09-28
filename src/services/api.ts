@@ -1,7 +1,7 @@
 import { SavedPortfolio, UnsavedPortfolio, User } from '../types'
 import { getUserInfo } from '../utils/utlis'
 
-const apiBaseUrl = 'http://localhost:8888/.netlify/functions'
+const apiBaseUrl = '/.netlify/functions'
 
 
 export const getPortfolios = (userId: number) => {
