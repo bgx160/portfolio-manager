@@ -77,7 +77,7 @@ export const ContentEditor = ({ portfolio, onEdit, refetchPortfolios }: ContentE
         if (!content) return true
 
         const { projects = [], about, skills } = content
-        return (!projects || projects.length === 0) && !about && !skills
+        return (!projects || projects.length === 0) && (!skills || skills.length === 0) && !about  
     }
 
     if (isContentEmpty()) return <Typography variant='h6' component='h2' sx={commonTypographyStyles}>This portfolio is empty</Typography>
