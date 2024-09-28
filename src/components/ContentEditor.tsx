@@ -181,7 +181,7 @@ export const ContentEditor = ({ portfolio, onEdit, refetchPortfolios }: ContentE
             {portfolio.published &&
                 <Typography sx={{ mt: 1 }} gutterBottom variant='body2'>
                     {`Portfolio available at `}
-                    <Link to={`http://localhost:8888/published/${portfolio._id}`}>http://localhost:8888/published/{portfolio._id}</Link>
+                    <Link to={`/published/${portfolio._id}`}>{window.location.origin}/published/{portfolio._id}</Link>
                 </Typography>}
         </>
     )
