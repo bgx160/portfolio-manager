@@ -74,7 +74,7 @@ A web application to manage and publish personal portfolios.
 1. Clone the repository:
 
   ```
-  git clone https://github.com/your-username/portfolio-manager-app.git
+  git clone https://github.com/bgx160/portfolio-manager.git
   cd portfolio-manager
   ```
 
