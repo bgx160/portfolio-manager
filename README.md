@@ -74,9 +74,8 @@ A web application to manage and publish personal portfolios.
 1. Clone the repository:
 
   ```
-  bash
   git clone https://github.com/your-username/portfolio-manager-app.git
-  cd portfolio-manager-app
+  cd portfolio-manager
   ```
 
 2. Install dependencies
