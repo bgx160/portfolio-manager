@@ -1,50 +1,85 @@
-# React + TypeScript + Vite
+# Portfolio Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application to manage and publish personal portfolios. 
 
-Currently, two official plugins are available:
+## Built with
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Front end
 
-## Expanding the ESLint configuration
+- TypeScript
+- React
+- Material-UI (MUI)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Back end
 
-- Configure the top-level `parserOptions` property like this:
+- Netlify Functions
+- MongoDB
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Authentication
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- JSON Web Token (JWT)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Features
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### User authentication
+
+- Authenticate users with username and password
+
+### Multiple portfolio management
+
+- Create and manage multiple portfolios per user
+- Organize content such as personal bios, projects, and skills in each portfolio
+
+### Bio with links
+
+- Add a personal biography to portfolios
+- Include important links (e.g. GitHub, LinkedIn)
+
+### Projects
+
+- Unlimited projects per portfolio
+- Include important links (e.g. GitHub, live demo)
+
+### Skills
+
+- Manage relevant skills for each portfolio
+
+### Portfolio publishing
+
+- Publish portfolios with content
+- Share a direct URL to your published portfolio for others to view
+
+## Getting Started
+
+### Prerequisites
+- **Node.js** installed on your system.
+- A **MongoDB** instance for the database.
+- **Netlify CLI** to run the app locally with Netlify Functions.
+
+### Installation
+
+1. Clone the repository:
+
+  ```
+  bash
+  git clone https://github.com/your-username/portfolio-manager-app.git
+  cd portfolio-manager-app
+  ```
+
+2. Install dependencies
+  
+  ```
+  npm install
+  ```
+
+3. Create `.env` file at the root of your project and set up environment variables
+
+  ```
+  DB_URI=<your-mongodb-connection-string>
+  SECRET=<your-jwt-secret>
+  ```
+4. Run the app locally
+
+  ```
+  netlify dev
+  ```
