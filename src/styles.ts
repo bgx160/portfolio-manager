@@ -60,6 +60,8 @@ export const tabMenuStyles: SxProps<Theme> = {
 }
 
 export const publishedPortfolioPageStyles: SxProps<Theme> = {
+  backgroundColor: '#292828',
+  color: '#fff',
   width: '100vw',
   height: '100vh',
 }
