@@ -53,7 +53,7 @@ export const PublishedPortfolio = () => {
             <Box sx={publishedPortfolioStyles}>
 
                 <Grid sx={{ mt: 3 }} container spacing={6}>
-                    <Grid size={9}>
+                    <Grid size={{ xs: 12, md: 9 }}>
                         <Box sx={aboutMeSectionStyles}>
                             <Typography variant='h4' component='h4' sx={{ ...commonTypographyStyles }}>{portfolio?.name}</Typography>
                             <AboutMeSection content={content?.about || { bio: '', links: [] }} />
